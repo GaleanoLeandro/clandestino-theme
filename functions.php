@@ -124,4 +124,9 @@ require_once get_template_directory() . '/inc/custom-meta-descriptions.php';
 
 require_once get_template_directory() . '/inc/custom-read-more.php';
 
-require_once get_template_directory() . '/inc/custom-posts-types.php';
+// require_once get_template_directory() . '/inc/custom-posts-types.php';
+
+/**
+ * Funcion para notificar actualizaciones del tema
+ */
+require_once get_template_directory() . '/inc/theme-update.php';
