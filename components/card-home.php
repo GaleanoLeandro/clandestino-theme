@@ -1,4 +1,4 @@
-<div class="card grid-item">
+<div class="card">
   <a class="text-body" href="<?php the_permalink() ?>">
     <?php the_post_thumbnail('post-thumbnail') ?>
     <div class="card-with-img text-white d-flex align-items-center justify-content-center">

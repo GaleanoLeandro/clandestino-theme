@@ -130,3 +130,8 @@ require_once get_template_directory() . '/inc/custom-read-more.php';
  * Funcion para notificar actualizaciones del tema
  */
 require_once get_template_directory() . '/inc/theme-update.php';
+
+/**
+ * Google analytics
+ */
+require_once get_template_directory() . '/inc/analytics.php';
