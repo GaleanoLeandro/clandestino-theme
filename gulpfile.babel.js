@@ -50,7 +50,7 @@ gulp.task('scss', () => {
     .pipe(sass())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(plumber())
-    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
+    .pipe(autoprefixer())
     .pipe(cleanCSS())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./'))
@@ -83,5 +83,7 @@ gulp.task('zip', () => {
     .pipe(zip('clandestino.zip'))
     .pipe(gulp.dest('./')) 
 })
+
+gulp.task('build', gulp.series('scss', 'js', 'libs', 'zip'))
 
 gulp.task('default', gulp.parallel('server', 'scss', 'js'))
