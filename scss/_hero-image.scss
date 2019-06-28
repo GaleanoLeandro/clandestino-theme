@@ -1,0 +1,9 @@
+.hero {
+  width: 100%;
+  overflow: hidden;
+  & img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+  }
+}

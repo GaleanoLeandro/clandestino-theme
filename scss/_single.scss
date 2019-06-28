@@ -1,0 +1,8 @@
+.content-single{
+  & iframe, video {
+    margin-top: 1rem;
+    width: 100%;
+    height: calc(100vw * (9/16));
+    max-height: calc(800px * 9/16);
+  }
+}

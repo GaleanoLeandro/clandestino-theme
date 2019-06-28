@@ -1,0 +1,54 @@
+/*!
+Theme Name: NahueClandestino
+Theme URI:
+Author: Leandro Galeano
+Author URI:
+Description: Tema personalizado para nahueclandestino.com
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: clandestino
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap');
+@import './bootstrap/bootstrap';
+@import 'simplelightbox';
+@import 'functions';
+@import 'mixins';
+@import 'tipography';
+
+@import 'social-share-buttons';
+@import 'single';
+@import 'masonry';
+@import 'hero-image';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.img-hero {
+  max-height: 70vh;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.list-reset {
+  list-style-type: none;
+  padding: 0;
+}

@@ -1,0 +1,14 @@
+.sharebuttons{
+  & .btn {
+    color: #FFF;
+    &>span {
+      display: none;
+    }
+  }
+}
+
+.btn-facebook { background: #3b5998; }
+.btn-twitter { background: #00acee; }
+
+.btn-facebook:hover { background: #2f4679;}
+.btn-twitter:hover { background: #0089bd;}
