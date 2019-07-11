@@ -72,7 +72,7 @@ gulp.task('js', () => {
 })
 
 gulp.task('libs', () => {
-  return gulp.src(['./js/all.min.js', './js/bootstrap.min.js', './js/simple-lightbox.min.js'])
+  return gulp.src([ './js/bootstrap.min.js', './js/simple-lightbox.min.js'])
     .pipe(concat('libraries.js'))
     .pipe(gulp.dest('./'))
 })

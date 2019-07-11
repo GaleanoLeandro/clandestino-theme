@@ -12,10 +12,13 @@ add_action( 'widgets_init', 'clandestino_sidebars' );
 if (!function_exists('clandestino_scripts')):
   function clandestino_scripts () {
     wp_register_style('style', get_stylesheet_uri(), null, '1.0.0', 'all');
+
+    wp_register_script( 'font-awesome', 'https://kit.fontawesome.com/1fdb5f9262.js', null, '1.0.0', false);
     wp_register_script( 'libraries', get_template_directory_uri() . '/libraries.js', array('jquery'), '1.0.0', true);
     wp_register_script( 'script', get_template_directory_uri() . '/script.js', array('jquery', 'libraries'), '1.0.0', true);
 
     wp_enqueue_script('jquery');
+    wp_enqueue_script('font-awesome');
     wp_enqueue_script('libraries');
     wp_enqueue_script('script');
     wp_enqueue_style('style');
