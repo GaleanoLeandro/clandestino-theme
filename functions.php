@@ -13,7 +13,7 @@ if (!function_exists('clandestino_scripts')):
   function clandestino_scripts () {
     wp_register_style('style', get_stylesheet_uri(), null, '1.0.0', 'all');
 
-    wp_register_script( 'font-awesome', 'https://kit.fontawesome.com/1fdb5f9262.js', null, '1.0.0', false);
+    wp_register_script( 'font-awesome', 'https://kit.fontawesome.com/1fdb5f9262.js', null, '1.0.0', true);
     wp_register_script( 'libraries', get_template_directory_uri() . '/libraries.js', array('jquery'), '1.0.0', true);
     wp_register_script( 'script', get_template_directory_uri() . '/script.js', array('jquery', 'libraries'), '1.0.0', true);
 
@@ -24,6 +24,7 @@ if (!function_exists('clandestino_scripts')):
     wp_enqueue_style('style');
   }
 endif;
+
 
 if (!function_exists('clandestino_setup')):
   function clandestino_setup() {
@@ -138,3 +139,9 @@ require_once get_template_directory() . '/inc/theme-update.php';
  * Google analytics
  */
 require_once get_template_directory() . '/inc/analytics.php';
+
+
+/**
+ * Remove Jquery migrate
+ */
+require_once get_template_directory() . '/inc/remove-jquery-migrate.php';
